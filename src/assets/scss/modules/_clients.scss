@@ -1,0 +1,63 @@
+//CLIENTS_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+.clients {
+  padding: 0 0;
+  // background-color: $c-black;
+
+  @media #{$large-up} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wrap {
+
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: gutter() 0 gutter(3);
+    margin-bottom: 0;
+
+    @media #{$medium-up} {
+      padding: gutter() 0 gutter(2);
+    }
+
+    .logo {
+      padding-right: gutter();
+      margin-top: gutter(2);
+      padding-left: gutter();
+      margin-bottom: 0;
+      width: 50%;
+      @media #{$small-up} {
+        padding-left: gutter();
+        padding-right: gutter();
+        width: 25%;
+      }
+      @media #{$medium-up} {
+        padding-left: gutter();
+        margin-top: gutter();
+        padding-right: gutter();
+        width: 16.6666666667%;
+
+      }
+      @media #{$large-up} {
+        width: 12.5%;
+      }
+
+      svg {
+        filter: grayscale(100%);
+        path, polygon, rect {
+          // fill: $c-white;
+        }
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+}

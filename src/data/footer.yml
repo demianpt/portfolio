@@ -1,0 +1,86 @@
+footer:
+    googlePartner: 'google-partner.png'
+    copyRight:
+        es: 'Todos los derechos reservados'
+        en: 'All rights reserved'
+
+    legalInfoLink:
+        es: 'Aviso Legal'
+        en: 'Legal advice'
+
+    legalInfo:
+        es:
+            -
+                title: 'Identificación y razón social de la empresa:'
+                description:
+                    - 'RUNROOM PRODUCCIÓN MULTIMEDIA, S.L., con CIF: B-63.691.836 y domicilio en Barcelona, C/ Milà i Fontanals, 14-26, 3º 2ª, inscrita en el Registro Mercantil de Barcelona., al Tomo 37117, Folio 138, Hoja B-299100, , presta sus servicios a través de Internet en la página web "runroom.com".'
+                    - 'Para cualquier consulta, sugerencia o reclamación el usuario de esta página web puede dirigirse a las oficinas de nuestra empresa sitas en la dirección mencionada anteriormente, o bien a la dirección de correo electrónico runroom@runroom.com'
+
+            -
+                title: 'Condiciones de acceso del usuario:'
+                description:
+                    - 'El usuario se obliga a usar la información contenida en el presente sitio de Internet para las finalidades propias del Portal exclusivamente, en concreto para la finalidad de obtención de información sobre los servicios y a no realizar directa o indirectamente ningún tipo de explotación comercial diferente a los usos autorizados.'
+                    - 'El usuario de la página web tendrá derecho al acceso libre y gratuito a la información pública recogida en la misma, si bien Runroom se reserva el derecho a restringir el acceso a determinadas secciones y servicios del Portal a sus clientes registrados.'
+
+            -
+                title: 'Propiedad intelectual e industrial:'
+                description:
+                    - 'Los derechos relativos a la propiedad industrial e intelectual (a título enunciativo y no limitativo las marcas, logotipos, textos, fotografías, iconos, imágenes, etc., así como el diseño gráfico, código fuente y demás elementos de software contenidos en la presente página Web), son propiedad de Runroom o de las demás entidades que puedan ofrecer información a través del Portal. Por tanto, están sujetos a derechos de propiedad intelectual e industrial protegidos por la legislación española e internacional.'
+                    - 'Sin la previa autorización escrita de forma fehaciente de Runroom o, en su caso, de la entidad titular de los derechos, no está permitido utilizar, reproducir, transmitir, manipular, así como cualquier uso que exceda de la utilización necesaria para la visita de la página y el uso de los servicios ofrecidos.'
+                    - 'El acceso a los servicios suministrados no supone por parte de Runroom, ni por parte del respectivo titular, renuncia, transmisión, ni cesión total o parcial de los derechos derivados de la propiedad intelectual e industrial, ni atribuye derechos de utilización, alteración, explotación, reproducción, distribución o comunicación pública sobre estos contenidos sin la previa y expresa autorización por escrito de los respectivos titulares de dichos derechos, sin perjuicio del derecho de visualización y obtención de copia privada de seguridad de tales contenidos, siempre que dicho derecho se ejercite según los principios de buena fe y siempre que se mantenga inalterada la propiedad intelectual e industrial del titular de tales derechos, se utilice sin fines comerciales y exclusivamente para información personal del usuario.'
+                    - 'La responsabilidad derivada del uso de materiales protegidos por los derechos de propiedad intelectual e industrial contenidos en esta página corresponderá exclusivamente al usuario.'
+            -
+                title: 'Objeto del portal:'
+                description:
+                    - 'La presente página ha sido diseñada por Runroom para facilitar información sobre los servicios y otras actividades de la empresa. La página web dispone de unos datos de contacto y formularios a través de los cuales los usuarios pueden dirigirse a la empresa para las finalidades previstas en cada caso, según la regulación de las cláusulas del Portal.'
+                    - 'Runroom se reserva el derecho a realizar cuantas modificaciones y actualizaciones crea conveniente sobre la página web.'
+
+            -
+                title: 'Exoneración de responsabilidad:'
+                description:
+                    - 'Runroom no responderá por las interrupciones que puedan producirse en los servicios eléctricos o de telecomunicaciones que impidan a los usuarios utilizar los servicios ofrecidos. Asimismo, Runroom no responderá de las páginas Web a las que pueda remitir a través de enlaces o links, banners u otros dispositivos, ni de los contenidos que estas pudieran incluir en sus portales.'
+
+            -
+                title: 'Protección de datos de carácter personal:'
+                description:
+                    - 'La información recibida por Runroom a través de la presente página Web será tratada con la máxima reserva y confidencialidad conforme a la normativa vigente. A los efectos de lo previsto en la Ley Orgánica de Protección de Datos de Carácter Personal (LOPD), Runroom informa al usuario que los datos personales que pueda facilitar a través de esta página web son incorporados en ficheros titularidad de RUNROOM PRODUCCIÓN MULTIMEDIA, S.L. (Runroom) con la finalidad de gestionar el presente Portal de Internet. El titular de los datos autoriza de forma específica a que sus datos puedan ser accedidos por la siguiente empresa de hosting sita en EE.UU.: DreamHost WebHosting (PMB # 257, 417 Associated Rd., Brea, CA 92821).'
+                    - 'Para ejercitar los derechos de acceso, rectificación, cancelación y oposición previstos en la Ley puede dirigirse mediante comunicación escrita a Runroom, Ref. Protección de datos, C/ Milà i Fontanals, 14-26, 3º 2ª, 08012 Barcelona.'
+                    - 'Runroom declara y garantiza que mantiene los niveles de seguridad de protección de datos personales conforme al Real Decreto 1720/2007, que ha establecido todos los medios técnicos a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos facilitados por los usuarios, sin perjuicio de informar que las medidas de seguridad en Internet no son inexpugnables.'
+
+        en:
+            -
+                title: 'Identification and company name:'
+                description:
+                    - 'MULTIMEDIA PRODUCTION RUNROOM SL, CIF: B-63,691,836, and address in Barcelona, C / Mila i Fontanals, 14-16, 3º 2ª, registered in the Mercantile Register of Barcelona., Volume 37 117, Folio 138, Hoja B -299 100,, provides its services through the Internet at the website &ldquo;runroom.com&rdquo;.'
+                    - 'For any question, suggestion or complaint the user of this website please contact our business office, located at the above address, or to the email address runroom@runroom.com.'
+
+            -
+                title: 'Conditions of access user:'
+                description:
+                    - 'The user agrees to use the information contained in this website for the purposes of the Portal exclusively own, specifically for the purpose of obtaining information about services and not directly or indirectly make any commercial uses different authorized.'
+                    - 'The user of the website will be entitled to free access to public information contained in it, although Runroom reserves the right to restrict access to specific sections and portal services to its registered customers.'
+
+            -
+                title: 'Intellectual property:'
+                description:
+                    - 'The rights relating to intellectual property (a title not limited to trademarks, logos, texts, photographs, icons, images, etc.. As well as graphic design, source code, software and other items contained on this page Web), are the property of Runroom or other entities who may provide information through the Portal. They are therefore subject to rights of intellectual property protected by Spanish and international law.'
+                    - 'Without the prior written permission of Runroom reliably or, where appropriate, of the owner of rights, not allowed to use, reproduce, transmit, manipulate, and any use beyond the use necessary for the visit page and the use of the services offered.'
+                    - 'Access to services is not provided by Runroom, or by the respective companies, resignation, transfer or sale of all or part of the rights derived from intellectual property, or assigning rights of use, alteration, exploitation, reproduction, distribution or public communication of these contents without the prior express written permission of the respective owners of those rights, without prejudice to the right display and obtaining private security copy of such contents, if such right is exercised according to principles of good faith and remains unchanged if the intellectual property of the owner of such rights, non-commercial use, solely for your personal information.'
+                    - 'The liability for the use of material protected by intellectual property rights and industrial content on this page rests solely with the user.'
+
+            -
+                title: 'Object of portal:'
+                description:
+                    - 'This page has been designed by Runroom to provide information on services and other activities of the company. The website has some contact information and forms through which users can contact the company for the purposes intended in each case, by the rules of the clauses of the Portal.'
+                    - 'Runroom reserves the right to make any changes and updates it sees fit on the website.'
+
+            -
+                title: 'Disclaimer:'
+                description:
+                    - 'Runroom not responsible for the disruptions that can occur in electrical or telecommunications services that prevent users from using the services offered. Also Runroom not liable for any Web pages that can refer via links or links, banners or other devices, or content that they could include in their portals.'
+            -
+                title: 'Protection of personal data:'
+                description:
+                    - 'The information received by Runroom through this website will be treated with the utmost discretion and confidentiality in accordance with current regulations. For the purposes of the provisions of the Organic Law of Protection of Personal Data (Data Protection Act), Runroom informs the user that the personal data that may provide through this website are embedded in files owned by RUNROOM MULTIMEDIA PRODUCTION, SL (Runroom) for the purpose of administering the Internet Portal. The owner of the data that specifically authorizes that their data can be accessed by the following hosting company based in USA: DreamHost WebHosting (PMB # 257, 417 Associated Rd, Brea, CA 92 821).'
+                    - 'To exercise your rights of access, rectification, cancellation and opposition under the Act may be directed by written notice to Runroom, Ref Data Protection, C / Mila i Fontanals, 14-16, 3º 2ª, 08012 Barcelona.'
+                    - 'Runroom represent and warrant that maintains the safety standards for protection of personal data in accordance with Royal Decree 1720/2007, which has established all the technical means at its disposal to prevent the loss, misuse, alteration, unauthorized access and theft of data provided by users, subject to report that Internet security measures are not foolproof.'

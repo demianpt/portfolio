@@ -1,0 +1,74 @@
+
+// =Helpers
+// ------------------------------------------------------
+@function stripUnit($number) {
+    @return $number / ($number * 0 + 1);
+}
+@function unitlessZero($number) {
+    $value: $number;
+
+    @if (type-of($value) == number) and stripUnit($value) == 0 {
+        $value: stripUnit($value);
+    }
+
+    @return $value;
+}
+
+@function rootFontSize($html-font-size) {
+    @return (stripUnit($html-font-size) * stripUnit($global-font-size-px))/100;
+}
+
+@function gridColumnWidth($columns) {
+    $columns: ($columns * 100) / $grid-columns;
+    @return (decimalRound($columns, 5)) +%;
+}
+@function decimalRound ($number, $digits: 0) {
+    $n: 1;
+    // $number must be a number
+    @if type-of($number) != number {
+        @warn '#{ $number } is not a number.';
+        @return $number;
+    }
+    // $digits must be a unitless number
+    @if type-of($digits) != number {
+        @warn '#{ $digits } is not a number.';
+        @return $number;
+    } @else if not unitless($digits) {
+        @warn '#{ $digits } has a unit.';
+        @return $number;
+    }
+    @for $i from 1 through $digits {
+        $n: $n * 10;
+    }
+    @return ceil($number * $n) / $n;
+}
+
+
+// =px to global units
+// ------------------------------------------------------
+@function units($val, $times:1) {
+    @return ((stripUnit($val) / rootFontSize($global-font-size)) * $times) + $global-units;
+}
+
+@function gutter($times: 1) {
+    @return units($global-gutter*$times);
+}
+
+
+//Functions
+@function strip-unit($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+@function get-relative-value($size, $times) {
+    @if unit($size) == 'px' {
+        @return (strip-unit($size) / 16) * $times;
+    }
+    @else {
+        @return strip-unit($size) * $times;
+    }
+}
+
+@function get-rems($size, $times:1) {
+    @return get-relative-value($size, $times) * 1rem;
+}

@@ -1,0 +1,21 @@
+footer {
+  background: $c-black;
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  p {
+    color: $c-white;
+    margin: 0;
+    font-size: 8px;
+    font-family: $t-rubik;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:  $c-neutroDark;
+    text-align: center;
+  }
+}

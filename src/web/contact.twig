@@ -1,0 +1,30 @@
+{% extends 'files/includes/base.twig' %}
+{% set page = "contact" %}
+
+{% block content %}
+<article class="page contact">
+  <section class="intro contact">
+    <div class="wrap">
+      <h2 class="description without">If you want to contact me you can shoot me an email to</span></h2>
+      <h1>demianpt@gmail.com</h1>
+      <ul class="social-list">
+        <li class="social-item behance">
+          <a href="https://www.behance.net/demianpt">
+          {% include '../assets/images/behance.svg' %}
+          </a>
+        </li>
+        <li class="social-item linkedin">
+          <a href="http://www.linkedin.com/in/demianpt/en">
+          {% include '../assets/images/linkedin.svg' %}
+          </a>
+        </li>
+        <li class="social-item codepen">
+          <a href="http://www.codepen.io/demianpt">
+          {% include '../assets/images/codepen.svg' %}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</article>
+{% endblock %}

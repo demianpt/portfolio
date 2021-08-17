@@ -1,0 +1,42 @@
+//METHODOLOGY_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+.methodology{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include veil($opacity:0.7);
+  &:before {
+    z-index: 1;
+  }
+
+
+  .wrap {
+    z-index: 10;
+
+    h2, p {
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .step {
+    width: 33.33334%;
+    @include veil;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: url(http://unsplash.it/1200/1200) no-repeat center;
+    background-size: cover;
+
+    h2 {
+      text-align: center;
+      position: relative;
+    }
+  }
+}

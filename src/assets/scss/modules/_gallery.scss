@@ -1,0 +1,117 @@
+.gallery.works {
+  display: flex;
+  flex-wrap: wrap;
+
+  .work {
+    // @include aspect-ratio;
+    background: grey;
+    // box-shadow: inset 0 0 0 5px rgba(255,255,255,1);
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: cover;
+    transition: all 0.3s ease;
+
+    &:hover {
+      // box-shadow: inset 0 0 0 15px rgba(255,255,255,1);
+      // box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.52);
+    }
+
+    // @media #{$small-up} {
+    //   width: 50%;
+    // }
+    //
+    // @media #{$large-up} {
+    //   width: 33.333334%;
+    // }
+    //
+    // @media #{$xlarge-up} {
+    //   width: 25%;
+    // }
+    //
+    // @media #{$xxlarge-up} {
+    //   width: 20%;
+    // }
+
+    a { display: block }
+
+    &.runroom {
+      background-image: url(https://inside.runroom.com/app/uploads/2016/02/Runroom-2016-1024x682.jpg);
+      background-color: rgba($c-runroom,0.9);
+      background-position: 62% 50%;
+      width: 50%;
+      height: 50vh;
+
+      &:hover {
+        // background-color: rgba($c-runroom,0);
+      }
+    }
+
+    &.deiser {
+      background-image: url(https://cdn-images-1.medium.com/max/800/0*HAKVrV7fp4XS0cc_.JPG);
+      background-color: rgba($c-deiser2,0.9);
+      width: 62.5%;
+      height: 50vh;
+
+      &:hover {
+        // background-color: rgba($c-deiser,0);
+      }
+    }
+
+    &.otogami {
+      background-image: url(../images/otogami-work-2.jpg);
+      background-color: rgba($c-otogami,0.9);
+      width: 25%;
+      height: 50vh;
+
+      &:hover {
+        // background-color: rgba($c-otogami,0);
+      }
+    }
+
+    &.runnics {
+      background-image: url(../images/runnics-work.jpg);
+      background-color: rgba($c-runnics,0.9);
+      width: 25%;
+      height: 50vh;
+
+      &:hover {
+        // background-color: rgba($c-runnics,0);
+      }
+    }
+
+    .inner {
+      position: absolute;
+      top:0;left:0;right:0;bottom:0;
+      padding: gutter(2);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: left;
+      background-color: rgba(#999, 0.35);
+      // background-color: rgba($c-white, 0.5);
+      transition: all 0.3s ease;
+
+      &:hover {
+        // background-color: rgba($c-white, 0.8);
+        z-index: 50;
+      }
+
+      h2,p {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        margin:0;
+        line-height: 1.5;
+      }
+    }
+  }
+}

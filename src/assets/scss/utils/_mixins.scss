@@ -1,0 +1,237 @@
+// =MIXINS
+// -------------------------------------------------------------------------- */
+@mixin clearfix {
+  *zoom: 1; // IE6/7 support
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin aspect-ratio($width:1, $height:1) {
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+}
+@mixin gridPush($columns: 0) {
+  position: relative;
+  left: gridColumnWidth($columns);
+  right: auto;
+}
+@mixin gridPull($columns: 0) {
+  position: relative;
+  right: gridColumnWidth($columns);
+  left: auto;
+}
+@mixin gridOffset($columns: 0) {
+  margin-left: gridColumnWidth($columns) !important;
+}
+@mixin gridWidth($columns: 1) {
+  width: gridColumnWidth($columns);
+}
+@mixin gridColumns() {
+  padding-left: gutter(.5);
+  padding-right: gutter(.5);
+  float: left;
+}
+@mixin gridMarginAuto() {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin gridMarginClear() {
+  margin-left: 0;
+  margin-right: 0;
+}
+@mixin gridPaddingClear() {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin verticalAlign($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin clearVerticalAlign($position: static) {
+  position: $position;
+  top: initial;
+  transform: initial;
+}
+
+@mixin visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: units(1px);
+  margin: units(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: units(1px);
+}
+
+@mixin hideText {
+  text-indent: 30em;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .lt-ie9 & {
+    text-indent: -9999em;
+  }
+}
+
+@mixin wrapper {
+  @include clearfix;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: $global-max-width;
+  margin: 0 auto;
+  padding: 0 gutter();
+  z-index: 1;
+
+  @media #{$small-up} {
+    padding: 0 gutter(2);
+  }
+}
+
+@mixin videoFullWidth() {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: units(25px);
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin lineThrough($color: $c-black, $padding: 1rem, $size: 1px) {
+
+  overflow: hidden;
+  text-align: center;
+
+  &:before,
+  &:after {
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 50%;
+    height: $size;
+    vertical-align: middle;
+    background-color: $color;
+  }
+
+  &:before {
+    right: $padding;
+    margin-left: -50%;
+  }
+  &:after {
+    left: $padding;
+    margin-right: -50%;
+  }
+}
+
+@mixin clearLineThrough() {
+
+  overflow: initial;
+
+  &:before,
+  &:after {
+    position: initial;
+    display: initial;
+    content: '';
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    background-color: none;
+  }
+
+  &:before {
+    right: initial;
+    margin-left: auto;
+  }
+  &:after {
+    left: initial;
+    margin-right: auto;
+  }
+}
+
+@mixin backgroundOpacity($color, $opacity: 0.3, $fallback: #fff) {
+  background: $fallback;
+  background: rgba($color, $opacity);
+}
+
+@mixin ir {
+  text-indent: 30em;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .lt-ie9 & {
+    text-indent: -9999em;
+  }
+}
+
+@mixin cf {
+  *zoom: 1; // IE6/7 support
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin fluid-type($min-font-size, $max-font-size, $min-vw: 480px, $max-vw: 1240px) {
+
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    font-size: $min-font-size;
+
+    @media only screen and (min-width: $min-vw) {
+      font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+    }
+    @media only screen and (min-width: $max-vw) {
+      font-size: get-rems($max-font-size);
+    }
+  }
+  @else {
+    @error "OMG -> Detected mixed units. Please use the same units for all parameters.";
+  }
+}
+
+@mixin veil($bg: $c-white, $opacity:0.5){
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    display: block;
+    margin: auto;
+    background-color: rgba($bg,$opacity);
+  }
+}

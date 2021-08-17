@@ -1,0 +1,26 @@
+globals:
+    runroom: "Runroom"
+
+    paths:
+        images: /assets/images/
+        javascripts: /assets/javascripts/
+        stylesheets: /assets/stylesheets/
+        fonts: /assets/fonts/
+        vendors: /assets/javascripts/libs/vendor/
+        welcome: /files/
+
+    es:
+        meta:
+            title:  "Demian Tatay - Frontend Developer & UI-UX Designer based in Barcelona"
+            description: "Demian Tatay - Frontend Developer & UI-UX Designer based in Barcelona"
+            url: "www.demiantatay.com"
+            image: ""
+        phone: "(+34)625852720"
+
+    en:
+        meta:
+            title:  "Demian Tatay - Frontend Developer & UI-UX Designer based in Barcelona"
+            description: "Demian Tatay - Frontend Developer & UI-UX Designer based in Barcelona"
+            url: "www.demiantatay.com"
+            image: "http://www.runroom.com/assets/apple-touch-icon-144x144-precomposed.png"
+        phone: "(+34)625852720"

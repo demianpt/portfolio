@@ -1,0 +1,79 @@
+header:
+    es:
+        logo:
+            link: "es/"
+            image: "logo-runroom.svg"
+            logoIsWhite: "logo-runroom-small-white.png"
+
+        menu:
+            -
+                link: "es/clientes"
+                utmterm: ""
+                title: "clientes"
+                class: ""
+            -
+                link: "es/sobre-nosotros"
+                utmterm: ""
+                title: "sobre nosotros"
+            -
+                link: "es/servicios"
+                utmterm: ""
+                title: "servicios"
+            -
+                link: "es/proyectos"
+                utmterm: ""
+                title: "proyectos"
+            -
+                link: "es/blog"
+                utmterm: ""
+                title: "blog"
+            -
+                link: "es/contacto"
+                utmterm: ""
+                title: "contacto"
+
+            -
+                link: "es/unete"
+                utmterm: ""
+                title: "únete"
+
+    en:
+        logo:
+            link: "en/"
+            image: "logo-runroom.svg"
+            logoIsWhite: "logo-runroom-small-white.png"
+
+        menu:
+            -
+                link: "en/clients"
+                utmterm: ""
+                title: "clients"
+            -
+                link: "en/about"
+                utmterm: ""
+                title: "about us"
+            -
+                link: "en/services"
+                utmterm: ""
+                title: "services"
+            -
+                link: "en/projects"
+                utmterm: ""
+                title: "projects"
+            -
+                link: "en/blog"
+                utmterm: ""
+                title: "blog"
+            -
+                link: "en/contact"
+                utmterm: ""
+                title: "contact"
+
+            -
+                link: "en/join-us"
+                utmterm: ""
+                title: "join us"
+
+    language:
+        es: 'español'
+        en: 'english'

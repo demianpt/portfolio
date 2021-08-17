@@ -1,0 +1,149 @@
+//LATEST_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+.latest {
+  padding: 0 0 gutter(4);
+  position: relative;
+  z-index: 2;
+
+  .info {
+    padding: 0;
+    margin-top: gutter();
+    text-align: left;
+
+    @media #{$small-up} {
+      padding-left: gutter(2);
+      padding-right: gutter(2);
+      text-align: center;
+    }
+    @media #{$medium-up} {
+      margin-top: 0;
+      text-align: left;
+    }
+    @media #{$large-up} {
+      text-align: left
+    }
+
+    ul,li {
+      list-style-type: square;
+
+      @media #{$small-up} {
+        list-style-type:: none;
+      }
+      @media #{$medium-up} {
+        list-style-type: square;
+      }
+    }
+  }
+
+  h2 {
+    @media #{$large-up} {
+      margin-left: gutter(2);
+    }
+  }
+
+  p {
+    margin-bottom: 5px
+  }
+  .list {
+    margin-bottom: 15px;
+  }
+
+  .tags {
+    margin-bottom: 10px;
+    li {
+      display: inline-block;
+      border: 1px solid $c-black;
+      text-align: center;
+      color: $c-black;
+      padding: 3px 5px;
+      font-size:10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: gutter(2);
+  }
+
+  .work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    margin-top: gutter(5);
+    position: relative;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media #{$small-up} {
+      margin-top: gutter(5);
+    }
+
+    @media #{$medium-up} {
+      margin-top: gutter(6);
+    }
+
+    @media #{$large-up} {
+      margin-top: gutter(2);
+    }
+
+    &.capside {
+      img {
+        top:0;left:0;right:0;bottom:0;
+        position: absolute;
+
+        &:nth-child(1){
+          position: relative;
+        }
+      }
+    }
+
+    &:nth-child(2n) {
+      flex-direction: column-reverse;
+
+      @media #{$medium-up} {
+        flex-direction: row;
+      }
+
+      .info {
+        @media #{$large-up} {
+          padding-left: gutter(4);
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .col {
+    width: 100%;
+
+    @media #{$medium-up} {
+      width: 50%;
+    }
+  }
+
+  .image {
+    position: relative;
+
+    img,svg {
+      margin: auto;
+      max-width: 600px;
+      left:0;right:0;
+    }
+
+    svg {
+      margin: 20px;
+    }
+  }
+
+  h3 {
+    font-weight: 500
+  }
+}
